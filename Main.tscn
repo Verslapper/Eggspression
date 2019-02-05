@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Main.gd" type="Script" id=1]
 [ext_resource path="res://Player.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Player.gd" type="Script" id=3]
 [ext_resource path="res://Enemy.tscn" type="PackedScene" id=4]
+[ext_resource path="res://HUD.tscn" type="PackedScene" id=5]
 
 [node name="Main" type="Node" index="0"]
 
@@ -18,6 +19,8 @@ state = null
 [node name="Enemy" parent="." index="1" instance=ExtResource( 4 )]
 
 position = Vector2( 841, 406 )
-state = 0
+state = null
+
+[node name="HUD" parent="." index="2" instance=ExtResource( 5 )]
 
 

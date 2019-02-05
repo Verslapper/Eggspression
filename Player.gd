@@ -2,7 +2,7 @@ extends Area2D
 
 enum PlayerState { NEUTRAL, ATTACK_PREP, ATTACKING, DEFENDING }
 
-export (PlayerState) var state
+export (String) var state
 
 func _ready():
 	# Called when the node is added to the scene for the first time.
